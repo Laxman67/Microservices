@@ -7,7 +7,8 @@ import CommentList from './CommentList';
 const PostList = () => {
   const [posts, setPosts] = useState({});
   const fetchPost = async () => {
-    const res = await axios.get('http://localhost:4002/posts');
+    const res = await axios.get('http://posts.com/posts');
+    
     setPosts(res.data);
   };
 
@@ -33,6 +34,7 @@ const PostList = () => {
 
                 <CommentList comments={post.comments} />
                 <CommentCreate postId={post.id} />
+                
               </div>
             </div>
           );

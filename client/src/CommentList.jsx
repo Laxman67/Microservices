@@ -1,5 +1,5 @@
 const CommentList = ({ comments }) => {
-  const renderedComments = comments.map((comment) => {
+  const renderedComments = comments?.map((comment) => {
     let content;
 
     switch (comment.status) {

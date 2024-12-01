@@ -17,4 +17,5 @@ COPY ./ ./
 
 
 # Set the default command to start the application
-CMD [ "npm", "start" ]
+
+CMD [ "npm", "run","dev" ]
